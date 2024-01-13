@@ -1,0 +1,42 @@
+Os doy los detalles de la prueba que hay que realizar.
+
+Se os va enviar una landing page en HTML, con CSS y Javascript.
+Hay que crear un formulario que simplemente sea funcional solicitando en un primer momento un email y una contraseña (No hace falta que esté conectado a ninguna BBDD ni que haga ninguna petición, ni que muestre ningún error) y al darle a un botón de continuar, se tendrá que mostrar un segundo formulario solicitando datos de tarjeta.
+
+Ese formulario tendrá que adaptarse por CSS para que sea similar al original
+
+Además tendrá que ser un formulario Responsive como el resto de landing page.
+
+primer fomulario:
+https://prnt.sc/uRkxpGgC_uDg
+https://prnt.sc/zbFIyfQfT7aZ
+
+segundo formulario:
+https://prnt.sc/iPeLXkPQr1OA
+https://prnt.sc/Uojo3HilIqAB
+
+El botón pay now del 2º form cuando pasas el ratón por encima se amplia
+https://prnt.sc/ntNIy1H3dxQW
+https://prnt.sc/bYn6mDJ4mmuZ
+
+Habrá que reactivar el contador hacia atrás
+
+https://prnt.sc/MVflAeZ14oE7
+https://prnt.sc/mwrVKkeNUc-Z
+
+Habrá que crear una funcion para que cambie el color.
+
+https://prnt.sc/xcr72InJRv48
+https://prnt.sc/dBtdfldJg5xF
+https://prnt.sc/H3eD0k6JPMeM
+https://prnt.sc/1KTbgQCB86EX
+https://prnt.sc/KK7EL8sIfyRl
+
+Habrá que agregar una bandera de idioma
+
+https://prnt.sc/eIOlzn7k_6hL
+https://prnt.sc/I5Ppavt92yNj
+https://prnt.sc/-ohowTDbbWFC
+https://prnt.sc/u1McbSqebhmI
+
+Tenéis un plazo de 24 horas para realizar la tarea y entregarnos la landing finalizada.
