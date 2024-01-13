@@ -103,9 +103,6 @@ body {
   width: 100%;
 }
 
-.colors {
-}
-
 .colors div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -632,7 +629,190 @@ form {
 
 #userDataForm {
   margin: 20px auto;
+  padding: 20px;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  #userDataForm {
+    width: 350px;
+  }
+}
+
+.form-check-input {
+  margin-left: -1.25em;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-radius: 50px;
+  border: none;
+  color: black !important;
+  width: 90% !important;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  background-color: #007bff !important;
+  border: none;
+}
+
+input:not([type="checkbox"]),
+select {
+  width: 100%;
+  height: 40px;
+  text-indent: 6px !important;
+  padding-bottom: 3px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px !important;
+}
+
+.form-check {
+  position: relative;
+
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.form-check-input {
+  margin-left: -1.5em !important;
+  margin-top: 1px !important;
+}
+.form-check-label {
+  margin: 4px 0 0 0;
+  float: left;
+  text-indent: 15px;
+  font-size: 12px;
+  font-weight: bold !important;
+}
+.flagContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.flagEN {
+  width: 95px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #666666;
+}
+
+.flagEN .flag {
+  height: 25px;
+  width: auto;
+}
+
+.flagLogo {
+  width: 100%;
+  height: auto;
+}
+.flagText {
+  margin-top: -5px;
+  padding-left: 5px;
+  color: white;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #cardDataForm {
+    width: 349px;
+  }
+}
+#cardDataForm label[for="expirationDate"]::before {
+  content: "Expiration Date"; /* Texto original en pantallas mayores a 992px */
+  display: inline-block;
+  margin-left: -16px;
+}
+
+@media (max-width: 768px) {
+  #cardDataForm label[for="cvv"]::before {
+    content: "CVC/";
+  }
+  #cardDataForm label[for="expirationDate"]::before {
+    content: "Expiration month:";
+  }
+  #cardDataForm label[for="expirationYear"]::before {
+    content: "Expiration year:";
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .color-container .pen-container.normal {
+    position: relative;
+    left: -20px;
+  }
+  .color-container .ipad-container {
+    top: 0px;
+    position: relative;
+    left: 20px;
+  }
+  .color-container .colors {
+    margin-right: -35px;
+    position: relative;
+    left: 81px;
+  }
+  .color-container .colors div {
+    transform: rotate(180deg);
+  }
+}
+
+@media (min-width: 500px) and (max-width: 576px) {
+  .color-container .pen-container.normal {
+    position: relative;
+    left: -20px;
+  }
+  .color-container .ipad-container {
+    top: 0px;
+    position: relative;
+    left: 20px;
+  }
+  .color-container .colors {
+    margin-right: -35px;
+    position: relative;
+    left: 81px;
+  }
+  .color-container .colors div {
+    transform: rotate(180deg);
+  }
+}
+
+@media (max-width: 499px) {
+  .color-container .pen-container.normal {
+    position: relative;
+    left: -10px;
+  }
+  .color-container .ipad-container {
+    top: 0px;
+    position: relative;
+    left: 20px;
+  }
+  .color-container .colors {
+    margin-right: -35px;
+    position: relative;
+    left: 30px;
+  }
+  .color-container .colors div {
+    transform: rotate(0);
+  }
+}
+
+@media (min-width: 769px) {
+  #expirationYearContent {
+    margin-top: 17px;
+  }
+}
+
 #cardDataForm {
   margin: 10px auto;
 }
@@ -645,7 +825,7 @@ form {
   font-size: 16px;
   cursor: pointer;
   border: none;
-  width: 400px;
+  width: 90%;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
@@ -653,10 +833,6 @@ form {
 
 #cardDataForm #payNowBtn:hover {
   width: 100%;
-}
-
-#expirationYearContent {
-  margin-top: 19px;
 }
 
 .payment {
@@ -1054,91 +1230,7 @@ label strong {
   line-height: 1;
   padding-bottom: 20px;
 }
-/* === Form Info one === */
-#userDataForm {
-  padding: 20px;
-  max-width: 400px !important;
-}
 
-.form-check-input {
-  margin-left: -1.25em;
-}
-
-.btn-primary {
-  background-color: #007bff;
-  border-radius: 50px;
-  border: none;
-  color: black !important;
-}
-
-.btn-primary:hover {
-  background-color: #0056b3;
-}
-
-.btn-primary:focus,
-.btn-primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-}
-
-.btn-primary.disabled,
-.btn-primary:disabled {
-  background-color: #007bff !important;
-  border: none;
-}
-
-input:not([type="checkbox"]),
-select {
-  width: 100%;
-  height: 40px;
-  text-indent: 6px !important;
-  padding-bottom: 3px;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 9px !important;
-}
-
-.form-check {
-  position: relative;
-
-  display: flex !important;
-  justify-content: space-between !important;
-}
-.form-check-input {
-  margin-left: -1.5em !important;
-  margin-top: 1px !important;
-}
-.form-check-label {
-  margin: 4px 0 0 0;
-  float: left;
-  text-indent: 15px;
-  font-size: 12px;
-  font-weight: bold !important;
-}
-.flagContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
-}
-.flagEN {
-  width: 85px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  border-radius: 5px;
-  background-color: #666666;
-}
-
-.flagLogo {
-  width: 100%;
-  height: auto;
-}
-.flagText {
-  padding-top: 10px;
-  padding-left: 5px;
-  color: white;
-}
 /* === Form Payment === */
 
 /* === SECTION INFO END === */
@@ -1245,6 +1337,7 @@ select {
   }
   .tl_new {
     font-size: 22px;
+    margin-top: -15px;
   }
   .pen-container {
     position: relative;
@@ -1317,6 +1410,13 @@ select {
   .ipad-container {
     top: -130px;
     right: 20px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 576px) {
+  .air-logo {
+    width: 200px;
+    margin-left: 0;
   }
 }
 
@@ -1400,12 +1500,23 @@ select {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .tl_win {
-    font-size: 80px;
+    font-size: 47px;
   }
   .tl_new {
-    font-size: 19px;
+    font-size: 17px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .tl_win {
+    font-size: 47px;
+  }
+  .tl_new {
+    font-size: 17px;
+    margin-top: 0;
   }
   .logo-container {
     margin-top: 0;
